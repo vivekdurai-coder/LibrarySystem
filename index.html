@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Metrophobic&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>LIBRARY BOOK LENDING SYSTEM</h1>
+      </header>
+
+      <hr />
+
+      <h1>Books In Our Inventory</h1>
+
+      <hr />
+
+      <div id="Book_Availability">
+        <div class="Book_Item">
+          <img src="images/Book1.png" alt="book1" srcset="" />
+
+          <h4>The Complete Reference By Thomas</h4>
+
+          <button id="0" onclick="Rent_Book(0)">
+            Rent
+          </button>
+        </div>
+
+        <div class="Book_Item">
+          <img src="images/Book2.png" alt="book2" srcset="" />
+
+          <h4>Pro CSS Techniques By Jeff</h4>
+
+          <button id="1" onclick="Rent_Book(1)">
+            Rent
+          </button>
+        </div>
+
+        <div class="Book_Item">
+          <img src="images/Book3.png" alt="book3" srcset="" />
+
+          <h4>JS Programming by Brian Jenkins</h4>
+
+          <button id="2" onclick="Rent_Book(2)">
+            Rent
+          </button>
+        </div>
+
+        <div class="Book_Item">
+          <img src="images/Book4.png" alt="book3" srcset="" />
+
+          <h4>Java Programming by Murach</h4>
+
+          <button id="3" onclick="Rent_Book(3)">
+            Rent
+          </button>
+        </div>
+      </div>
+
+      <hr />
+
+      <button onclick="Return_Book()">
+        Return Book</button
+      ><br />
+
+      <div class="Input_Form" id="Rent_Book">
+        <h4 id="BookName_Display"></h4>
+        <br />
+
+        <input type="text" placeholder="Enter USER NAME" id="UserName" /><br />
+
+        <input type="text" placeholder="Enter MEMERSHIP NUMBER" id="MNumber" />
+        <br />
+
+        <input
+          type="text"
+          placeholder="Enter HOW MANY DAYS"
+          id="Duration"
+        /><br />
+
+        <h4 id="Return_Date"></h4>
+        <button onclick="CheckDate()">Check Date</button>
+        <button onclick="BookRent()">Rent</button>
+      </div>
+
+      <div class="Input_Form" id="Return_Book">
+        <h1>Return Window</h1>
+        <input
+          type="text"
+          placeholder="Enter USER NAME"
+          id="R_UserName"
+        /><br />
+
+        <input
+          type="text"
+          placeholder="Enter MEMERSHIP NUMBER"
+          id="R_MNumber"
+        />
+        <br /><br />
+
+        <button onclick="BookReturn()">Return</button>
+      </div>
+    </div>
+  </body>
+</html>
